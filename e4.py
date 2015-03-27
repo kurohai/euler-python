@@ -1,5 +1,6 @@
 #!/bin/env python
 
+
 def IsPalindrome(num):
     snum = str(num)
     max = len(snum) / 2
@@ -12,6 +13,7 @@ def IsPalindrome(num):
             return False
     return True
 
+
 def GetAllMultiples(num):
     """returns all multiples between 800 and 1000 of a number"""
     c = 1000
@@ -21,13 +23,12 @@ def GetAllMultiples(num):
         multiples.add(GetMultiple(c, num))
     return multiples
 
+
 def GetMultiple(num1, num2):
     """returns the multiple of any number"""
     return num1 * num2
 
-
-if __name__ == '__main__':
-
+def Main():
     max = GetMultiple(999,999)
     multi = set()
     for i in xrange(800, 1000):
@@ -36,3 +37,8 @@ if __name__ == '__main__':
         if i > 900000:
             if IsPalindrome(i):
                 print i
+
+
+
+if __name__ == '__main__':
+    Main()

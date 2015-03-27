@@ -1,7 +1,9 @@
 #!/bin/env python
 
+
 def GetFibbo(seq, last):
     return seq + last
+
 
 def IsEven(num):
     if num % 2 == 0:
@@ -9,7 +11,8 @@ def IsEven(num):
     else:
         return False
 
-def docalc(last, fibo, max):
+
+def Main(last, fibo, max):
     sum = 0
     while fibo < max:
         if IsEven(fibo):
@@ -17,7 +20,8 @@ def docalc(last, fibo, max):
         tmp = fibo
         fibo = GetFibbo(last, fibo)
         last = tmp
+    print sum
 
-    return sum
 
-print docalc(1, 2, 4000000)
+if __name__ == '__main__':
+    Main(1, 2, 4000000)

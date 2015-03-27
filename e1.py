@@ -8,6 +8,7 @@ def mfive(num):
     else:
         return 0
 
+
 def mthree(num):
     p = num * 3
     if p < 1000:
@@ -16,7 +17,7 @@ def mthree(num):
         return 0
 
 
-def docalc():
+def Main():
     sum = 0
     done = set()
     for i in xrange(1000):
@@ -30,14 +31,5 @@ def docalc():
     print sum
 
 
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
-    docalc()
+    Main()
