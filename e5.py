@@ -7,6 +7,7 @@ def IsDivisible(num1, num2):
     else:
         return True
 
+
 def CheckAll(num):
     if not IsDivisible(num, 2):
         return False

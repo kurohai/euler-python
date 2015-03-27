@@ -28,6 +28,7 @@ def GetMultiple(num1, num2):
     """returns the multiple of any number"""
     return num1 * num2
 
+
 def Main():
     max = GetMultiple(999,999)
     multi = set()
